@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cisco Cybersecurity Essentials v3.0 - Módulo 20</title>
+    <!-- Tailwind CSS para diseño moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen flex flex-col font-sans">
+
+    <!-- Encabezado -->
+    <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-3 mb-3 md:mb-0">
+                <div class="bg-blue-600 text-white p-2.5 rounded-xl font-bold text-xl shadow-md">🛡️</div>
+                <div>
+                    <h1 class="text-xl font-bold text-slate-900">Cybersecurity Essentials v3.0</h1>
+                    <p class="text-xs text-slate-500 font-medium">Módulo 20: Ética, Gobernanza y Carrera</p>
+                </div>
+            </div>
+            <!-- Navegación por pestañas -->
+            <nav class="flex flex-wrap gap-2 justify-center" id="tab-nav">
+                <button onclick="switchTab('design')" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold transition bg-blue-600 text-white shadow-sm" data-tab="design">Principios de Diseño</button>
+                <button onclick="switchTab('governance')" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold transition bg-slate-200 text-slate-700 hover:bg-slate-300" data-tab="governance">Gobernanza y Marcos</button>
+                <button onclick="switchTab('simulator')" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold transition bg-slate-200 text-slate-700 hover:bg-slate-300" data-tab="simulator">Simulador Ético</button>
+                <button onclick="switchTab('career')" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold transition bg-slate-200 text-slate-700 hover:bg-slate-300" data-tab="career">Carrera y Certs</button>
+                <button onclick="switchTab('quiz')" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold transition bg-slate-200 text-slate-700 hover:bg-slate-300" data-tab="quiz">Autoevaluación</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="flex-grow max-w-7xl w-full mx-auto p-4 md:p-6">
+
+        <!-- Pestaña 1: Principios de Diseño -->
+        <section id="content-design" class="tab-content space-y-6">
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-2xl font-bold text-slate-900 mb-2">Principios de Diseño de Seguridad</h2>
+                <p class="text-slate-600 mb-6">Los fundamentos arquitectónicos para construir sistemas robustos, seguros y resilientes frente a ciberataques.</p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-blue-400 transition">
+                        <div class="text-3xl mb-3">🔒</div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-1">Defensa en Profundidad</h3>
+                        <p class="text-sm text-slate-600">Implementar múltiples capas de seguridad (perímetro, red, host, aplicación, datos) para que si una falla, las demás protejan el sistema.</p>
+                    </div>
+                    <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-blue-400 transition">
+                        <div class="text-3xl mb-3">🗝️</div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-1">Privilegio Mínimo</h3>
+                        <p class="text-sm text-slate-600">Otorgar a usuarios, procesos y sistemas únicamente los permisos estrictamente necesarios para realizar sus tareas y nada más.</p>
+                    </div>
+                    <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-blue-400 transition">
+                        <div class="text-3xl mb-3">⚡</div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-1">Simplicidad y Economía</h3>
+                        <p class="text-sm text-slate-600">Mantener los diseños simples y comprensibles. Los mecanismos complejos son más propensos a errores de configuración y vulnerabilidades.</p>
+                    </div>
+                    <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-blue-400 transition">
+                        <div class="text-3xl mb-3">👁️</div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-1">Fail-Safe (Fallo Seguro)</h3>
+                        <p class="text-sm text-slate-600">Si un sistema falla o se interrumpe, debe pasar a un estado seguro que bloquee el acceso en lugar de dejar la información abierta.</p>
+                    </div>
+                    <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-blue-400 transition">
+                        <div class="text-3xl mb-3">🔍</div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-1">Completitud de Mediación</h3>
+                        <p class="text-sm text-slate-600">Cada acceso a un recurso u objeto debe ser verificado y validado en busca de autorización sin excepciones.</p>
+                    </div>
+                    <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-blue-400 transition">
+                        <div class="text-3xl mb-3">🛡️</div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-1">Separación de Privilegios</h3>
+                        <p class="text-sm text-slate-600">Requerir dos o más condiciones o entidades diferentes para conceder un acceso crítico o ejecutar una acción sensible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pestaña 2: Gobernanza y Marcos -->
+        <section id="content-governance" class="tab-content hidden space-y-6">
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-2xl font-bold text-slate-900 mb-2">Gobernanza, Políticas y Marcos de Trabajo</h2>
+                <p class="text-slate-600 mb-6">Cómo las organizaciones estructuran la gestión del riesgo de seguridad de la información a nivel directivo y operativo.</p>
+
+                <div class="space-y-4">
+                    <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
+                        <h3 class="font-bold text-blue-600 text-lg">1. Marco NIST Cybersecurity (CSF)</h3>
+                        <p class="text-sm text-slate-600 mt-1">Se compone de 5 funciones principales para gestionar el riesgo cibernético: <strong>Identificar, Proteger, Detectar, Responder y Recuperar</strong>.</p>
+                    </div>
+                    <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
+                        <h3 class="font-bold text-blue-600 text-lg">2. Políticas de Seguridad de la Información</h3>
+                        <p class="text-sm text-slate-600 mt-1">Directrices formales creadas por la alta dirección que dictan el comportamiento aceptable de los empleados, el uso de contraseñas, la gestión de dispositivos móviles y la clasificación de datos.</p>
+                    </div>
+                    <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
+                        <h3 class="font-bold text-blue-600 text-lg">3. Cumplimiento Regulatorio y Leyes</h3>
+                        <p class="text-sm text-slate-600 mt-1">Normativas legales obligatorias para proteger la privacidad del usuario y los datos financieros o de salud (ej. <strong>GDPR</strong> en Europa, <strong>HIPAA</strong> en salud, <strong>PCI-DSS</strong> para tarjetas de crédito).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pestaña 3: Simulador Ético y Legal -->
+        <section id="content-simulator" class="tab-content hidden space-y-6">
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-2xl font-bold text-slate-900 mb-2">Simulador de Decisiones Éticas y Legales</h2>
+                <p class="text-slate-600 mb-6">Evalúa casos prácticos del mundo real y toma la decisión correcta basada en la ética profesional del ciberanalista.</p>
+
+                <div id="scenario-card" class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span id="scenario-badge" class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded-full">Caso 1 de 3</span>
+                    </div>
+                    <h3 id="scenario-title" class="text-lg font-bold text-slate-900"></h3>
+                    <p id="scenario-desc" class="text-slate-700 text-sm leading-relaxed"></p>
+                    <div id="scenario-options" class="space-y-3 pt-2"></div>
+                    <div id="scenario-feedback" class="hidden p-4 rounded-lg mt-4 text-sm font-medium"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pestaña 4: Carrera y Certificaciones -->
+        <section id="content-career" class="tab-content hidden space-y-6">
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-2xl font-bold text-slate-900 mb-2">Carreras y Certificaciones en Ciberseguridad</h2>
+                <p class="text-slate-600 mb-6">Explora los roles profesionales más demandados y las credenciales que validan tus conocimientos en la industria.</p>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">💼 Roles Profesionales Comunes</h3>
+                        <ul class="space-y-2 text-sm text-slate-600">
+                            <li>• <strong>Analista de SOC (Centro de Operaciones de Seguridad):</strong> Monitorea y responde a alertas en tiempo real.</li>
+                            <li>• <strong>Pentester / Hacker Ético:</strong> Evalúa la seguridad probando vulnerabilidades autorizadas.</li>
+                            <li>• <strong>Oficial de Seguridad (CISO / Gestor):</strong> Define políticas corporativas y gestiona riesgos.</li>
+                            <li>• <strong>Ingeniero Forense Digital:</strong> Investiga cómo ocurrió un ataque y recopila evidencias legales.</li>
+                        </ul>
+                    </div>
+                    <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">🏆 Certificaciones Reconocidas</h3>
+                        <ul class="space-y-2 text-sm text-slate-600">
+                            <li>• <strong>CompTIA Security+:</strong> Estándar global para habilidades iniciales e intermedias.</li>
+                            <li>• <strong>Cisco CyberOps Associate:</strong> Enfocada en operaciones de seguridad y monitoreo de redes.</li>
+                            <li>• <strong>CEH (Certified Ethical Hacker):</strong> Especializada en técnicas de pruebas de penetración.</li>
+                            <li>• <strong>CISSP:</strong> Certificación avanzada para directivos y arquitectos de seguridad.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pestaña 5: Autoevaluación -->
+        <section id="content-quiz" class="tab-content hidden space-y-6">
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-2xl font-bold text-slate-900 mb-2">Autoevaluación del Módulo 20</h2>
+                <p class="text-slate-600 mb-6">Pon a prueba tus conocimientos adquiridos sobre diseño seguro, marcos de gobernanza y ética profesional.</p>
+
+                <div id="quiz-container" class="space-y-6">
+                    <!-- Las preguntas se cargarán dinámicamente con JS -->
+                </div>
+                <button onclick="submitQuiz()" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2.5 rounded-lg transition shadow-sm">Calificar Respuestas</button>
+                <div id="quiz-score" class="mt-4 text-lg font-bold text-slate-900"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-white border-t border-slate-200 py-4 text-center text-xs text-slate-500">
+        Cisco Cybersecurity Essentials v3.0 • Módulo 20: Principios, Ética y Carrera
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
